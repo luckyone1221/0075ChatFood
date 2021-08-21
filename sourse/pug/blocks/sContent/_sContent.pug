@@ -2,8 +2,152 @@ mixin sContent()
 	// start sContent
 	+b.SECTION.sContent.section#sContent&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 sContent
-				
-			.row
+			+b.section-title.d-lg-none
+				h1 API ChatFood v1.0
+			+e.main-row.row
+				.col-lg-9.col-xl-9
+					+b.section-title.d-none.d-lg-block
+						h1 API ChatFood v1.0
+					+e.box.sidebar-box-js(id='box1')
+						h4 Общее
+						p Запросы к API ограничены, и не должны превышать более 10 запросов в секунду с одного IP-адреса. В противном случае вы будете получать ошибку.
+						p
+							span.code-example='<token>'
+							|
+							| - токен, предоставленный ботом BotFather.
+					+e.box.sidebar-box-js(id='box2')
+						h4.mb-xl-24 Заказы
+						+e.sub-box.sub-box-js
+							h5 Получение списка заказов
+							p Возвращает информацию о заказах. Максимальное количество заказов на одной странице 20.
+						+e.sub-box.sub-box-js
+							h6 Синтаксис запроса:
+							p
+								span.code-example='GET https://chatfood.ru/api/v1/<token> /get-orders'
+						+e.sub-box.sub-box-js
+							h6 Параметры для запроса:
+							+e.table
+								+e.tr--head
+									+e.tr-row.row.flex-nowrap
+										.col-3.col-md Name
+										.col-4.col-md Name
+										+e.big-col.col-5.col-md-auto Name
+								+sContentTableItem()
+								+sContentTableItem()
+						+e.sub-box.sub-box-js
+							h6 Результат ответа:
+							p
+								span.code-example JSON
+						+e.sub-box.sub-box-js
+							h6 Пример запроса:
+							p
+								span.code-example https://chatfood.ru/api/v1/123:ccccchhhhhaaaaatttttfffffoooooddddd/get-orders
+						+e.sub-box.sub-box-js
+							h6 Пример запроса:
+							p.code-example.d-block
+								span.d-block [
+								span.d-block &#160;&#160;&#160;{
+								span.d-block &#160;&#160;&#160;"unique": "000-6118ff54a5732",
+								span.d-block &#160;&#160;&#160;"status": "done",
+								span.d-block &#160;&#160;&#160;"create": 1629028180,
+								span.d-block &#160;&#160;&#160;"done": 1629042927,
+								span.d-block &#160;&#160;&#160;"method_delivery": "pickup",
+								span.d-block &#160;&#160;&#160;"price_delivery": null,
+								span.d-block &#160;&#160;&#160;"method_payment": "payment-cash",
+								span.d-block &#160;&#160;&#160;"cost": 550,
+								span.d-block &#160;&#160;&#160;"discount": 250,
+								span.d-block &#160;&#160;&#160;"id_client": 000,
+								span.d-block &#160;&#160;&#160;"rating": 4,
+								span.d-block &#160;&#160;&#160;"address": {
+								span.d-block &#160;&#160;&#160;"value": "Самара, партизанская 86, офис 734",
+								span.d-block &#160;&#160;&#160;"coordinate": 54.1235763,53.3785323
+								span.d-block &#160;&#160;&#160;},
+								span.d-block &#160;&#160;&#160;"content": [
+								span.d-block &#160;&#160;&#160;{
+								span.d-block &#160;&#160;&#160;"name": "Ролл Калифорния с мясом Камчатского краба",
+								span.d-block &#160;&#160;&#160;"price": 550,
+								span.d-block &#160;&#160;&#160;"quantity": 1,
+								span.d-block &#160;&#160;&#160;"rating": null
+								span.d-block &#160;&#160;&#160;},
+								span.d-block &#160;&#160;&#160;{
+								span.d-block &#160;&#160;&#160;"name": "Ролл Калифорния с мясом Камчатского краба 2",
+								span.d-block &#160;&#160;&#160;"price": 650,
+								span.d-block &#160;&#160;&#160;"quantity": 2,
+								span.d-block &#160;&#160;&#160;"rating": 4
+								span.d-block &#160;&#160;&#160;}
+								span.d-block &#160;&#160;&#160;]
+								span.d-block &#160;&#160;&#160;},
+								span.d-block ]
+					+e.box.sidebar-box-js(id='box3')
+						h4.mb-xl-24 Заказы
+						+e.sub-box.sub-box-js
+							h5 Получить список пользователей
+							p Возвращает информацию о заказах. Максимальное количество заказов на одной странице 20.
+						+e.sub-box.sub-box-js
+							h5 Информация о пользователе
+							p Возвращает информацию о заказах. Максимальное количество заказов на одной странице 20.
+						+e.sub-box.sub-box-js
+							h5 Начислить бонусы пользователю
+							p Возвращает информацию о заказах. Максимальное количество заказов на одной странице 20.
+						+e.sub-box.sub-box-js
+							h5 Отправить сообщение пользователю
+							p Возвращает информацию о заказах. Максимальное количество заказов на одной странице 20.
+				.col-lg-3.col-xl-3.order-lg-0.order-first
+					+e.sidebar
+						+sideBarItem(1, 'Общее')
+						+sideBarItem(2, 'Заказы')
+							+e.UL.sb-sub-box.sb-sub-box-js
+								li: a(href="#box2") Получение списка заказов
+								li: a(href="#box2") Синтаксис запроса:
+								li: a(href="#box2") Параметры для запроса:
+								li: a(href="#box2") Результат ответа:
+								li: a(href="#box2") Пример запроса:
+								li: a(href="#box2") Пример запроса:
+						+sideBarItem(3, 'Пользователи')
+							+e.UL.sb-sub-box.sb-sub-box-js
+								li: a(href="#box3") Получить список пользователей
+								li: a(href="#box3") Информация о пользователе
+								li: a(href="#box3") Начислить бонусы пользователю
+								li: a(href="#box3") Отправить сообщение пользователю
 	// end sContent
+
+mixin sContentTableItem()
+	+e.tr
+		+e.tr-row.row.flex-nowrap
+			.col-3.col-md status
+			.col-4.col-md
+				| Формат: string
+				br
+				| необязательное
+			+e.big-col.col-5.col-md-auto
+				p
+					| Получение списка заказов, отфильтрованного по
+					br
+					| статусу. Может принимать значения:
+				ul
+					//-•
+					li
+						span(style="color: #009FE3;") new
+						|
+						| – новый заказ
+					li
+						span(style="color: #009FE3;") inprocess
+						|
+						| – в работе
+					li
+						span(style="color: #009FE3;") predone
+						|
+						| – готов
+					li
+						span(style="color: #009FE3;") done
+						|
+						| – выполнен
+					li
+						span(style="color: #009FE3;") canceled
+						|
+						| – отменен
+
+mixin sideBarItem(boxId, title)
+	+e.sb-item.sb-item-js
+		+e.sb-title.sb-link-js.scroll-link(href=`#box${boxId}`)=title
+		block

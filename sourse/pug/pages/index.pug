@@ -6,26 +6,16 @@ include ../blocks/sContact/_sContact.pug
 include ../blocks/sTEst00/_sTEst00.pug
 
 block variables
-	- let  mainPage= 'main-page' 
-	- let  bg= null
+	- let  mainPage= null
+	- let  bg= '01-576.png'
 
 block title
-	- let  title= 'title'
+	- let  title= 'index'
 	title= title
 block pagecontent 
-	a.link-modal-js(href="#modal-call") sadasdsa 
-	a.link-modal-js(href="#modal-call") sadasdsa 
+	//-a.link-modal-js(href="#modal-call") sadasdsa
 	+mob-mnu()
-	+icon("telegram")
 	+header()
-	+top-nav()
-	
-	+topLine()
-	+headerBlock()
-	+sForm()
-	+sContact()
+		+top-nav()
+	+sContent()
 	+footer()
-      
-
-
-

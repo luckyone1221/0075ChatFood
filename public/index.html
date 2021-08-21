@@ -2,122 +2,278 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
-		<title>title</title>
+		<title>index</title>
 		<meta name="description" content="о чем страница">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=575,   maximum-scale=1 , user-scalable=0, shrink-to-fit=no">
 		<link type="image/ico" href="img/favicon.ico" rel="shortcut icon"><meta name="format-detection" content="telephone=no"> 
 		<link href="css/main.min.css" rel="stylesheet"/>
 	</head>
-	<body class="main-page">
-		<div class="main-wrapper"><a class="link-modal-js" href="#modal-call">sadasdsa </a><a class="link-modal-js" href="#modal-call">sadasdsa </a>
+	<body data-bg="01-576.png">
+		<div class="main-wrapper">
 			<div class="menu-mobile menu-mobile--js d-lg-none">
 				<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
 				</div>
 				<div class="menu-mobile__inner">
-					<ul class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-						<li class="menu-item menu-item-has-children"><a href="#" itemprop="url">О нас</a>
-							<ul class="sub-menu">
-								<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Наши работы</a></li>
-								<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Цены</a></li>
-								<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Калькулятор</a></li>
-								<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Акции</a></li>
-								<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Заказать</a></li>
-							</ul>
-						</li>
-						<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Наши работы</a></li>
-						<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Цены</a></li>
-						<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Калькулятор</a></li>
-						<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Акции</a></li>
-						<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Заказать</a></li>
+					<ul class="menu">
+						<li class="menu-item"><a href="#">Возможности</a></li>
+						<li class="menu-item"><a class="active" href="#">Как это работает</a></li>
+						<li class="menu-item"><a href="#">Продвижение</a></li>
+						<li class="menu-item"><a href="#">Как подключить</a></li>
+						<li class="menu-item"><a href="#">Частые вопросы</a></li>
+						<li class="menu-item"><a href="#">Контакты</a></li>
 					</ul>
 				</div>
 			</div>
 			<!--  мобильное меню-->
-			<svg class="icon icon-telegram ">
-				<use xlink:href="img/svg/sprite.svg#telegram"></use>
-			</svg>
 			<!-- start header-->
 			<header class="header" id="header">
-			</header>
-			<!-- end header-->
-			<!-- start top-nav-->
-			<div class="top-nav block-with-lazy">
-				<div class="container">
-					<div class="row">
-						<div class="col-auto d-lg-none">
-							<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
+				<!-- start top-nav-->
+				<div class="top-nav top-nav--js block-with-lazy">
+					<div class="top-nav__container container-lg">
+						<div class="top-nav__row row align-items-center">
+							<div class="col col-xl-2">
+								<a class="top-nav__logo" href="#"><img loading="lazy" src="img/svg/logo.svg" alt=""/>
+								</a>
+							</div>
+							<div class="col d-none d-xl-block">
+								<ul class="menu">
+									<li class="menu-item"><a href="#">Возможности</a></li>
+									<li class="menu-item"><a class="active" href="#">Как это работает</a></li>
+									<li class="menu-item"><a href="#">Продвижение</a></li>
+									<li class="menu-item"><a href="#">Как подключить</a></li>
+									<li class="menu-item"><a href="#">Частые вопросы</a></li>
+									<li class="menu-item"><a href="#">Контакты</a></li>
+								</ul>
+							</div>
+							<div class="col-auto col-xl-2">
+								<a class="connect-btn" href="#">
+									<div class="connect-btn__icon"><img loading="lazy" src="img/svg/tg.svg" alt=""/>
+									</div><span>Подключить</span>
+								</a>
+							</div>
+							<div class="col-auto d-xl-none">
+								<div class="toggle-menu-mobile toggle-menu-mobile--js"><span></span>
+								</div>
 							</div>
 						</div>
-						<div class="col d-none d-lg-block">
-							<ul class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-								<li class="menu-item menu-item-has-children"><a href="#" itemprop="url">О нас</a>
-									<ul class="sub-menu">
-										<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Наши работы</a></li>
-										<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Цены</a></li>
-										<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Калькулятор</a></li>
-										<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Акции</a></li>
-										<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Заказать</a></li>
+					</div>
+				</div>
+				<!-- end top-nav-->
+			</header>
+			<!-- end header-->
+			<!-- start sContent-->
+			<section class="sContent section" id="sContent">
+				<div class="container">
+					<div class="section-title d-lg-none">
+						<h1>API ChatFood v1.0</h1>
+					</div>
+					<div class="sContent__main-row row">
+						<div class="col-lg-9 col-xl-9">
+							<div class="section-title d-none d-lg-block">
+								<h1>API ChatFood v1.0</h1>
+							</div>
+							<div class="sContent__box sidebar-box-js" id="box1">
+								<h4>Общее</h4>
+								<p>Запросы к API ограничены, и не должны превышать более 10 запросов в секунду с одного IP-адреса. В противном случае вы будете получать ошибку.</p>
+								<p><span class="code-example">&lt;token&gt;</span>
+									- токен, предоставленный ботом BotFather.
+								</p>
+							</div>
+							<div class="sContent__box sidebar-box-js" id="box2">
+								<h4 class="mb-xl-24">Заказы</h4>
+								<div class="sContent__sub-box sub-box-js">
+									<h5>Получение списка заказов</h5>
+									<p>Возвращает информацию о заказах. Максимальное количество заказов на одной странице 20.</p>
+								</div>
+								<div class="sContent__sub-box sub-box-js">
+									<h6>Синтаксис запроса:</h6>
+									<p><span class="code-example">GET https://chatfood.ru/api/v1/&lt;token&gt; /get-orders</span></p>
+								</div>
+								<div class="sContent__sub-box sub-box-js">
+									<h6>Параметры для запроса:</h6>
+									<div class="sContent__table">
+										<div class="sContent__tr sContent__tr--head">
+											<div class="sContent__tr-row row flex-nowrap">
+												<div class="col-3 col-md">Name</div>
+												<div class="col-4 col-md">Name</div>
+												<div class="sContent__big-col col-5 col-md-auto">Name
+												</div>
+											</div>
+										</div>
+										<div class="sContent__tr">
+											<div class="sContent__tr-row row flex-nowrap">
+												<div class="col-3 col-md">status</div>
+												<div class="col-4 col-md">Формат: string<br/>необязательное</div>
+												<div class="sContent__big-col col-5 col-md-auto">
+													<p>Получение списка заказов, отфильтрованного по<br/>статусу. Может принимать значения:</p>
+													<ul>
+														<li><span style="color: #009FE3;">new</span>
+															– новый заказ
+														</li>
+														<li><span style="color: #009FE3;">inprocess</span>
+															– в работе
+														</li>
+														<li><span style="color: #009FE3;">predone</span>
+															– готов
+														</li>
+														<li><span style="color: #009FE3;">done</span>
+															– выполнен
+														</li>
+														<li><span style="color: #009FE3;">canceled</span>
+															– отменен
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="sContent__tr">
+											<div class="sContent__tr-row row flex-nowrap">
+												<div class="col-3 col-md">status</div>
+												<div class="col-4 col-md">Формат: string<br/>необязательное</div>
+												<div class="sContent__big-col col-5 col-md-auto">
+													<p>Получение списка заказов, отфильтрованного по<br/>статусу. Может принимать значения:</p>
+													<ul>
+														<li><span style="color: #009FE3;">new</span>
+															– новый заказ
+														</li>
+														<li><span style="color: #009FE3;">inprocess</span>
+															– в работе
+														</li>
+														<li><span style="color: #009FE3;">predone</span>
+															– готов
+														</li>
+														<li><span style="color: #009FE3;">done</span>
+															– выполнен
+														</li>
+														<li><span style="color: #009FE3;">canceled</span>
+															– отменен
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="sContent__sub-box sub-box-js">
+									<h6>Результат ответа:</h6>
+									<p><span class="code-example">JSON</span></p>
+								</div>
+								<div class="sContent__sub-box sub-box-js">
+									<h6>Пример запроса:</h6>
+									<p><span class="code-example">https://chatfood.ru/api/v1/123:ccccchhhhhaaaaatttttfffffoooooddddd/get-orders</span></p>
+								</div>
+								<div class="sContent__sub-box sub-box-js">
+									<h6>Пример запроса:</h6>
+									<p class="code-example d-block"><span class="d-block">[</span><span class="d-block">&#160;&#160;&#160;{</span><span class="d-block">&#160;&#160;&#160;"unique": "000-6118ff54a5732",</span><span class="d-block">&#160;&#160;&#160;"status": "done",</span><span class="d-block">&#160;&#160;&#160;"create": 1629028180,</span><span class="d-block">&#160;&#160;&#160;"done": 1629042927,</span><span class="d-block">&#160;&#160;&#160;"method_delivery": "pickup",</span><span class="d-block">&#160;&#160;&#160;"price_delivery": null,</span><span class="d-block">&#160;&#160;&#160;"method_payment": "payment-cash",</span><span class="d-block">&#160;&#160;&#160;"cost": 550,</span><span class="d-block">&#160;&#160;&#160;"discount": 250,</span><span class="d-block">&#160;&#160;&#160;"id_client": 000,</span><span class="d-block">&#160;&#160;&#160;"rating": 4,</span><span class="d-block">&#160;&#160;&#160;"address": {</span><span class="d-block">&#160;&#160;&#160;"value": "Самара, партизанская 86, офис 734",</span><span class="d-block">&#160;&#160;&#160;"coordinate": 54.1235763,53.3785323</span><span class="d-block">&#160;&#160;&#160;},</span><span class="d-block">&#160;&#160;&#160;"content": [</span><span class="d-block">&#160;&#160;&#160;{</span><span class="d-block">&#160;&#160;&#160;"name": "Ролл Калифорния с мясом Камчатского краба",</span><span class="d-block">&#160;&#160;&#160;"price": 550,</span><span class="d-block">&#160;&#160;&#160;"quantity": 1,</span><span class="d-block">&#160;&#160;&#160;"rating": null</span><span class="d-block">&#160;&#160;&#160;},</span><span class="d-block">&#160;&#160;&#160;{</span><span class="d-block">&#160;&#160;&#160;"name": "Ролл Калифорния с мясом Камчатского краба 2",</span><span class="d-block">&#160;&#160;&#160;"price": 650,</span><span class="d-block">&#160;&#160;&#160;"quantity": 2,</span><span class="d-block">&#160;&#160;&#160;"rating": 4</span><span class="d-block">&#160;&#160;&#160;}</span><span class="d-block">&#160;&#160;&#160;]</span><span class="d-block">&#160;&#160;&#160;},</span><span class="d-block">]</span></p>
+								</div>
+							</div>
+							<div class="sContent__box sidebar-box-js" id="box3">
+								<h4 class="mb-xl-24">Заказы</h4>
+								<div class="sContent__sub-box sub-box-js">
+									<h5>Получить список пользователей</h5>
+									<p>Возвращает информацию о заказах. Максимальное количество заказов на одной странице 20.</p>
+								</div>
+								<div class="sContent__sub-box sub-box-js">
+									<h5>Информация о пользователе</h5>
+									<p>Возвращает информацию о заказах. Максимальное количество заказов на одной странице 20.</p>
+								</div>
+								<div class="sContent__sub-box sub-box-js">
+									<h5>Начислить бонусы пользователю</h5>
+									<p>Возвращает информацию о заказах. Максимальное количество заказов на одной странице 20.</p>
+								</div>
+								<div class="sContent__sub-box sub-box-js">
+									<h5>Отправить сообщение пользователю</h5>
+									<p>Возвращает информацию о заказах. Максимальное количество заказов на одной странице 20.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-xl-3 order-lg-0 order-first">
+							<div class="sContent__sidebar">
+								<div class="sContent__sb-item sb-item-js">
+									<a class="sContent__sb-title sb-link-js scroll-link" href="#box1">Общее
+									</a>
+								</div>
+								<div class="sContent__sb-item sb-item-js">
+									<a class="sContent__sb-title sb-link-js scroll-link" href="#box2">Заказы
+									</a>
+									<ul class="sContent__sb-sub-box sb-sub-box-js">
+										<li><a href="#box2">Получение списка заказов</a></li>
+										<li><a href="#box2">Синтаксис запроса:</a></li>
+										<li><a href="#box2">Параметры для запроса:</a></li>
+										<li><a href="#box2">Результат ответа:</a></li>
+										<li><a href="#box2">Пример запроса:</a></li>
+										<li><a href="#box2">Пример запроса:</a></li>
 									</ul>
-								</li>
-								<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Наши работы</a></li>
-								<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Цены</a></li>
-								<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Калькулятор</a></li>
-								<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Акции</a></li>
-								<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Заказать</a></li>
-							</ul>
+								</div>
+								<div class="sContent__sb-item sb-item-js">
+									<a class="sContent__sb-title sb-link-js scroll-link" href="#box3">Пользователи
+									</a>
+									<ul class="sContent__sb-sub-box sb-sub-box-js">
+										<li><a href="#box3">Получить список пользователей</a></li>
+										<li><a href="#box3">Информация о пользователе</a></li>
+										<li><a href="#box3">Начислить бонусы пользователю</a></li>
+										<li><a href="#box3">Отправить сообщение пользователю</a></li>
+									</ul>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<!-- end top-nav-->
-			<!-- start topLine-->
-			<section class="topLine section" id="topLine">
-				<div class="container">
-					<div class="section-title text-center">
-						<h2>topLine</h2>
-					</div>
-					<div class="row"></div>
-				</div>
 			</section>
-			<!-- end topLine-->
-			<!-- start headerBlock-->
-			<div class="headerBlock section" id="headerBlock">
+			<!-- end sContent-->
+			<footer class="footer text-center">
 				<div class="container">
-					<div class="section-title text-center">
-						<h2>headerBlock ds dfsdfdsfsd</h2>
+					<div class="footer__row row">
+						<div class="col-md text-md-start">
+							<a class="footer__logo" href="#"><img loading="lazy" src="img/svg/logo.svg" alt=""/>
+							</a>
+						</div>
+						<div class="col-md-4 order-last order-md-0">
+							<a class="footer__tel" href="tel:88006007047">8 800 600-70-47
+							</a><br/>
+							<a class="footer__mail" href="mailto:info@chatfood.ru">info@chatfood.ru
+							</a>
+						</div>
+						<div class="col-md text-md-end">
+							<a class="connect-btn" href="#">
+								<div class="connect-btn__icon"><img loading="lazy" src="img/svg/tg.svg" alt=""/>
+								</div><span>Подключить</span>
+							</a>
+						</div>
 					</div>
-					<div class="row"></div>
-				</div>
-			</div>
-			<!-- end headerBlock-->
-			<!-- start sForm-->
-			<section class="sForm section" id="sForm">
-				<div class="container">
-					<div class="section-title text-center">
-						<h2>sForm</h2>
-					</div>
-					<div class="row"></div>
-				</div>
-			</section>
-			<!-- end sForm-->
-			<!-- start sContact-->
-			<section class="sContact section" id="sContact">
-				<div class="container">
-					<div class="section-title text-center">
-						<h2>sContact</h2>
-					</div>
-					<div class="row"></div>
-				</div>
-			</section>
-			<!-- end sContact-->
-			<footer class="footer">
-				<div class="container">
-					<div class="row">
-						<div class="col"></div>
-						<div class="col"></div>
-						<div class="col"></div>
-						<div class="col-auto"></div>
+					<div class="footer__row row align-items-center">
+						<div class="col-md text-md-start">
+							<a class="footer__parner-prog" href="#">Партнерская программа
+							</a>
+							<div class="footer__all-rights">
+								©
+								<span class="set-curr-jear-js">2021</span>
+								ChatFood.ru
+							</div>
+						</div>
+						<div class="col-md-4 order-first order-md-0">
+							<div class="footer__soc-row row justify-content-center">
+								<div class="col-auto">
+									<a class="footer__soc-link" href="#"><img loading="lazy" src="img/svg/soc-wa.svg" alt=""/>
+									</a>
+								</div>
+								<div class="col-auto">
+									<a class="footer__soc-link" href="#"><img loading="lazy" src="img/svg/soc-tg.svg" alt=""/>
+									</a>
+								</div>
+								<div class="col-auto">
+									<a class="footer__soc-link" href="#"><img loading="lazy" src="img/svg/soc-vb.svg" alt=""/>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md text-md-end">
+							<a class="footer__sec-link" href="#">Договор-оферта
+							</a><br/>
+							<a class="footer__sec-link" href="#">Пользовательское соглашение
+							</a>
+						</div>
 					</div>
 				</div>
 			</footer>
@@ -150,14 +306,7 @@
 		</div>
 		<!-- #modal-call-->
 		<!-- end modals-->
-		<!-- modal libs-->
 		<script src="libs/jquery/jquery.min.js"></script>
-		<script src="libs/@fancyapps/ui/fancybox.umd.js"></script>
-		<!-- modal libs-->
-		<!-- slider libs-->
-		<script src="libs/swiper/swiper-bundle.min.js"> </script>
-		<!-- /slider libs-->
-		<script src="libs/inputmask/inputmask.min.js"></script>
 		<script src="js/libs.js"></script>
 		<script src="js/common.js"></script>
 	</body>

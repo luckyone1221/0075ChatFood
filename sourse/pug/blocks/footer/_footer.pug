@@ -1,9 +1,36 @@
 mixin footer()
-	+b.FOOTER.footer
+	+b.FOOTER.footer.text-center
 		.container
-			.row
-				.col
-					
-				.col
-				.col
-				.col-auto
+			+e.row.row
+				.col-md.text-md-start
+					+e.logo(href="#")
+						img(loading="lazy" src="img/svg/logo.svg" alt="")
+				.col-md-4.order-last.order-md-0
+					+e.tel(href="tel:88006007047") 8 800 600-70-47
+					br
+					+e.mail(href="mailto:info@chatfood.ru") info@chatfood.ru
+				.col-md.text-md-end
+					+connectBtn()
+			+e.row.row.align-items-center
+				.col-md.text-md-start
+					+e.parner-prog(href="#") Партнерская программа
+					+e.all-rights
+						| ©
+						|
+						span.set-curr-jear-js 2021
+						|
+						| ChatFood.ru
+				.col-md-4.order-first.order-md-0
+					+e.soc-row.row.justify-content-center
+						+footerSocItem('wa')
+						+footerSocItem('tg')
+						+footerSocItem('vb')
+				.col-md.text-md-end
+					+e.sec-link(href="#") Договор-оферта
+					br
+					+e.sec-link(href="#") Пользовательское соглашение
+
+mixin footerSocItem(iconName)
+	.col-auto
+		+e.soc-link(href="#")
+			img(loading="lazy" src=`img/svg/soc-${iconName}.svg` alt="")

@@ -55,10 +55,7 @@
     "wowjs": "^1.1.3"
   },
   "dependencies": {
-    "@fancyapps/ui": "^4.0.0-beta.0",
-    "inputmask": "^5.0.6",
     "jquery": "^3.5.1",
-    "loading-attribute-polyfill": "^1.5.4",
-    "swiper": "^6.8.0"
+    "loading-attribute-polyfill": "^1.5.4"
   }
 }

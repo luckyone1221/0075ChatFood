@@ -1,40 +1,94 @@
 .top-nav {
-	// background: svg-load('../svg/check.svg',  stroke=$primary); 
-	// 
-	@include media-breakpoint-up(xl) {}
+	position: fixed;
+	background-color: $white;
+	z-index: 900;
+	top: 0;
+	left: 0;
+	width: 100%;
 
-	@include media-breakpoint-up(lg) {}
+	padding: rem(10) 0;
+	border-bottom: 1px solid $gray-300;
 
-	@include media-breakpoint-up(md) {}
+	&__container{
+		@include media-breakpoint-down(md){
+			padding-left: rem(18);
+			padding-right: rem(18);
+		}
+	}
 
-	@include media-breakpoint-up(sm) {}
+	transition: box-shadow .3s ease-in-out;
+	box-shadow: 0px 5px 10px rgba(48, 47, 47, 0);
+	&.fixed{
+		box-shadow: 0px 5px 10px rgba(48, 47, 47, 0.15);
+	}
 
-	@include media-breakpoint-up(xs) {}
+	&__row{
+		--bs-gutter-x: #{rem(10)};
+		@include media-breakpoint-up(md){
+			--bs-gutter-x: #{rem(20)};
+		}
+	}
+	&__logo{
+		display: block;
+		width: rem(180);
+		max-width: 100%;
+	}
 
-	// 
-	@include media-breakpoint-between(md, xl) {}
+	//
+	.menu{
+		width: 100%;
+		list-style: none;
+		margin: 0;
 
-	// 
-	@include media-breakpoint-only(xs) {}
+		display: flex;
+		align-items: center;
+		justify-content: center;
 
-	@include media-breakpoint-only(sm) {}
+		.menu-item{
+			margin-right: rem(20);
+			&:last-child{
+				margin-right: 0;
+			}
 
-	@include media-breakpoint-only(md) {}
-
-	@include media-breakpoint-only(lg) {}
-
-	@include media-breakpoint-only(xl) {}
-
-	// 
-	@include media-breakpoint-down(xl) {}
-
-	@include media-breakpoint-down(lg) {}
-
-	@include media-breakpoint-down(md) {}
-
-	@include media-breakpoint-down(sm) {}
-
-	@include media-breakpoint-down(xs) {}
+			a{
+				color: $dark;
+				&:hover{
+					color: $primary;
+				}
+			}
+		}
+	}
+	//
+	&__{}
+	&__{}
 }
 
+.connect-btn{
+	@extend .btn;
+	@extend .btn-light;
 
+	font-size: rem(16);
+	line-height: calc(19/16);
+	display: inline-flex;
+	width: rem(180);
+	max-width: 100%;
+	align-items: center;
+	justify-content: center;
+
+	&__icon{
+		width: rem(20);
+		height: rem(20);
+		margin-right: rem(10);
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		img{
+			width: auto;
+			height: auto;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+}
