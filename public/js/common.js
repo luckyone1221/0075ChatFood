@@ -190,9 +190,8 @@ function eventHandler() {
 		let prevBoxIsActive = $(currItem.previousElementSibling).find('.sb-link-js').hasClass('active');
 		let nextBox = document.querySelector($(currItem.nextElementSibling).find('.sb-link-js').attr('href'));
 		let nextBoxHasSubBoxes = nextBox.querySelectorAll('.sub-box-js').length > 0;
-		let nextBoxIsActive = $(currItem.nextElementSibling).find('.sb-link-js').hasClass('active');
-		console.log(prevBoxHasSubBoxes);
-		console.log(prevBoxIsActive);
+		let nextBoxIsActive = $(currItem.nextElementSibling).find('.sb-link-js').hasClass('active'); // console.log(prevBoxHasSubBoxes);
+		// console.log(prevBoxIsActive);
 
 		if (!prevBoxHasSubBoxes && prevBoxIsActive || !nextBoxHasSubBoxes && nextBoxIsActive) {
 			$(sidebarSubLinks).removeClass('active');

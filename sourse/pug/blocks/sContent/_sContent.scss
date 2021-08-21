@@ -1,5 +1,6 @@
 // start .sContent
 .sContent {
+	overflow: hidden;
 	--sPT: #{rem(36)};
 	--sPB: #{rem(60)};
 	--sTPB: #{rem(36)};
@@ -103,7 +104,7 @@
 	}
 	&__tr-row{
 		@include media-breakpoint-down(md){
-			max-width: 90vw;
+			max-width: 85vw;
 		}
 
 		--bs-gutter-x: #{rem(10)};
