@@ -1,6 +1,6 @@
 // start .sContent
 .sContent {
-	overflow: hidden;
+	//overflow: hidden;
 	--sPT: #{rem(36)};
 	--sPB: #{rem(60)};
 	--sTPB: #{rem(36)};
@@ -136,6 +136,7 @@
 			padding-left: rem(12);
 			position: sticky;
 			top: calc(var(--sPT) + var(--header-h));
+			//top: 20px;
 			left: 0;
 		}
 	}
@@ -234,7 +235,11 @@
 	display: inline-block;
 	background-color: rgba($primary, .1);
 	color: $primary;
-	font-size: rem(18);
+
+	font-size: rem(24);
+	@include media-breakpoint-up(md){
+		font-size: rem(18);
+	}
 	line-height: 1.25;
 
 	word-break: break-word;
